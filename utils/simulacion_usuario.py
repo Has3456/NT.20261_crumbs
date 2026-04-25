@@ -20,8 +20,6 @@ def generar_ususario(numero_usuarios):
 
     listaGenero = ["Masculino", "Femenino", "masculino", "femenino", "masculino"]  
     
-    edad = [19, 25, 28, 38, 50]
-
     idGastos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
