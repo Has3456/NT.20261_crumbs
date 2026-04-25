@@ -41,6 +41,7 @@ def generar_ususario(numero_usuarios):
             "id_gastos": random.choice(idGastos)
   
         }
+        
         usuarios.append(usuario)   
     return usuarios 
         
