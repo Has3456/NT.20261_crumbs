@@ -51,7 +51,29 @@ def generar_gasto(numeroGastos):
             "id_cliente": random.randint(1, 10)
         }
 
-# Agregar el gasto generado a la lista de gastos
+
+        #inyectando errores 
+        probabilidadError = random.random()
+
+        if probabilidadError < 0.10:
+            gasto["id"] = random.choice([None, -1, 0])
+            gasto["Valor"]= None
+            gasto["Valor"] = random.randint(-5000, -1)  
+
+        elif probabilidadError < 0.3:  
+           gasto["Grado de Necesidad"] = "Inexistente"
+           gasto["Descripción"] = " " + gasto["Descripción"] + " "
+
+        elif probabilidadError < 0.6:  
+           gasto["Fecha"] = "2020-02-31" 
+           gasto["Tipo de Necesidad"] = None
+           gasto["Lugar de Consumo"] = gasto["Lugar de Consumo"].upper()
+
+        elif probabilidadError < 0.9:  
+            pass
+
+
+    # Agregar el gasto generado a la lista de gastos
         gastos.append(gasto)
 
     return gastos
