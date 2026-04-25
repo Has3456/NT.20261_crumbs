@@ -49,6 +49,7 @@ def generar_gasto(numeroGastos):
             "Grado de Necesidad": random.choice(gradoNecesidad),
             "Descripción": random.choice(Descripcion),
             "id_cliente": random.choice(id_cliente)
+            
         }
 
 # Agregar el gasto generado a la lista de gastos
