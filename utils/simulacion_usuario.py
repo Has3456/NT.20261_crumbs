@@ -27,6 +27,7 @@ def generar_ususario(numero_usuarios):
     usuarios = []
     for i in range(numero_usuarios):
         usuario = {
+            "id": random.randint(1, 1000),
             "nombre": random.choice(listaNombres),
             "tipo_documento": random.choice(listaTipoDocumento),
             "documento": random.choice(listaDocumento),
