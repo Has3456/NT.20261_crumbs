@@ -31,7 +31,7 @@ def generar_gasto(numeroGastos):
                  "Compra de ropa", "Compra de gadgets", "Reserva de hotel"]
     
     
-    id_cliente = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ 
 
     # Generar gastos aleatorios
 
@@ -48,8 +48,12 @@ def generar_gasto(numeroGastos):
             "Medio de Verificación": random.choice(medioVerificacion),
             "Grado de Necesidad": random.choice(gradoNecesidad),
             "Descripción": random.choice(Descripcion),
+<<<<<<< HEAD:utils/simulacion_gasto.py
+            "id_cliente": random.randint(1, 10)
+=======
             "id_cliente": random.choice(id_cliente)
             
+>>>>>>> a0bf210ff7591bb13efc65b46fc1e12ec5cd5759:simulacion_gasto.py
         }
 
 # Agregar el gasto generado a la lista de gastos
