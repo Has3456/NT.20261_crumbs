@@ -40,6 +40,19 @@ def generar_ususario(numero_usuarios):
             "id_gastos": random.choice(idGastos)
   
         }
+
+        #Inyectar errores controlados 
+        probabilidadError = random.random()
+
+        if probabilidadError < 0.1: 
+            usuario["id"] = random.choice([])  # ID fuera del rango esperado
+        elif probabilidadError < 0.3:
+            pass
+        elif probabilidadError < 0.6:
+            pass
+        elif probabilidadError < 0.9:
+            pass
+            # 10% de probabilidad de error
         
         usuarios.append(usuario)   
     return usuarios 
