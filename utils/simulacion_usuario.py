@@ -43,8 +43,8 @@ def generar_ususario(numero_usuarios):
 
         #Inyectar errores controlados 
         probabilidadError = random.random()
-
-        if probabilidadError < 0.1: 
+ 
+        if probabilidadError < 0.1:
             usuario["id"] = random.choice([None,-1,0])
             usuario["edad"]= random.choice ([None,-5, -30])
         elif probabilidadError < 0.3:
@@ -56,7 +56,7 @@ def generar_ususario(numero_usuarios):
         elif probabilidadError < 0.9:
             usuario["nivel_socioeconomico"] = random.choice([None, "", "   "])
             usuario["rango_ingresos_mensuales"] = random.choice([None,-0,""])
-            # 10% de probabilidad de error
+       
         
         usuarios.append(usuario)   
     return usuarios 
