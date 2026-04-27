@@ -64,9 +64,9 @@ def limpia_simulacion(data_frame_sucio):
 
    
     #evaluar solo valores numericos permitidos
-    data_frame_limpio=data_frame_limpio[data_frame_limpio["id"]<0]
-    data_frame_limpio=data_frame_limpio[(data_frame_limpio["edad"])<=15]
-    data_frame_limpio=data_frame_limpio[data_frame_limpio["id_gastos"]<0]
+    data_frame_limpio = data_frame_limpio[data_frame_limpio["id"] > 0]
+    data_frame_limpio["edad"] = data_frame_limpio["edad"].astype(int)
+    data_frame_limpio = data_frame_limpio[data_frame_limpio["id_gastos"] > 0]
 
 
     #rutina para evaluar novedades 
