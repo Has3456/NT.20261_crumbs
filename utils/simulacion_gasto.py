@@ -63,11 +63,14 @@ def generar_gasto(numeroGastos):
         elif probabilidadError < 0.3:  
            gasto["Grado de Necesidad"] = "Inexistente"
            gasto["Descripción"] = " " + gasto["Descripción"] + " "
+           gasto["Medio de Verificación"] = random.choice([None, "", "Pago en especie", "Trueque", "Intercambio de bienes", "monedas de oro" ])
+           gasto["Grado de Necesidad"] = random.choice([None, "", "superflua", "esencial", "innecesaria", "prescindible"])
 
         elif probabilidadError < 0.6:  
            gasto["Fecha"] = "2020-02-31" 
            gasto["Tipo de Necesidad"] = None
            gasto["Lugar de Consumo"] = gasto["Lugar de Consumo"].upper()
+           gasto["Frecuencia del Gasto"] = random.choice([None, "", "cada minuto", "cada hora", "cada segundo"])
 
         elif probabilidadError < 0.9:  
             pass
