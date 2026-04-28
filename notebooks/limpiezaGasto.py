@@ -4,7 +4,7 @@ def limpiar_gasto(gastos_sucio):
     gasto_limpio = gastos_sucio.copy()
 
     columnas_gasto = ["valor", "grado_necesidad", "descripción", "fecha", "tipo_necesidad", "lugar_consumo", 
-                    "frecuencia_gasto", "medio_verificación", "descripción"]
+                    "frecuencia_gasto", "medio_verificación", ]
     
     #Rutina para evaluar textos
     #limpiar textos de las columnas de tipo string, eliminando espacios y convirtiendo a minúsculas
