@@ -11,7 +11,7 @@ print(usuarios_limpio)
 
 from utils.simulacion_gasto import generar_gasto
 from notebooks.limpiezaGasto import limpiar_gasto
-gastos = generar_gasto(10)
+gastos = generar_gasto(100)
 gastos_ordenados = pd.DataFrame(gastos)
 gastos_limpio = limpiar_gasto(gastos_ordenados)
 print(gastos_limpio)
